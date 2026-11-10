@@ -1,0 +1,455 @@
+{
+  "reviewed": "10 November 2026",
+  "topics": [
+    {
+      "id": "getting-started",
+      "category": "GETTING STARTED",
+      "title": "Your first beat",
+      "paragraphs": [
+        "Bank A is divided into A1–A8 for drums and A9–A16 for samples. Bank B holds B1–B8 bass and B9–B16 instruments. RES holds resampled material. Tap a pad to play it; hold a pad to open its editor.",
+        "Choose PATTERN, program some steps, select P1–P4 and press PLAY. Use SONG to arrange patterns. Save a named project when you want to keep the session."
+      ]
+    },
+    {
+      "id": "sequencing",
+      "category": "PATTERNS & SONG",
+      "title": "Build, extend and record your groove",
+      "paragraphs": [
+        "Use the 16/32 control to choose the pattern length, then 1–16 or 17–32 to edit each half. When the second half is empty, extending a 16-step pattern can copy the first half into it. Existing notes in the second half are preserved. Add SWING to change the groove.",
+        "The main REC records pad performances into the sequencer. Its count-in follows the project tempo. When the selected pattern or song contains no drum notes, a guide click continues during recording; it stays out of rendered audio. MUTE and SOLO affect the selected group."
+      ]
+    },
+    {
+      "id": "step-velocity",
+      "category": "STEP VELOCITY",
+      "title": "Double-tap a step to soften an individual hit",
+      "paragraphs": [
+        "On an active sequencer step, tap twice in quick succession. The first tap switches it off; the quick second tap restores it at the next velocity: 100% → 80% → 50% → 30% → 100%. Repeat the gesture for the level you want. This changes that hit, not the LEVEL of the whole pad.",
+        "A single tap adds or removes a step. Drag across a row to paint steps using the current on/off or velocity value. Use the different step intensities to give hats, snares and repeated notes more movement."
+      ]
+    },
+    {
+      "id": "pad-edit",
+      "category": "PAD EDIT",
+      "title": "Move between pads without leaving the editor",
+      "paragraphs": [
+        "Hold a loaded pad to open PAD EDIT, or use PAD EDIT in SAMPLER for the selected pad. The large outer arrows move between pads in the current bank without playing them. Navigation stops at the first and last pad.",
+        "The smaller arrows change sections. A1–A8 use SOUND → FX → TIME STRETCH → RESAMPLE. A9–A16 also include SIDECHAIN between TIME STRETCH and RESAMPLE. In SOUND and FX, X applies the edit and closes. RESAMPLE keeps its separate cancel behavior. PLAY/STOP in the editor controls the machine transport; PREVIEW auditions the edited sample."
+      ]
+    },
+    {
+      "id": "sampling",
+      "category": "IMPORTING SAMPLES",
+      "title": "Bring your own sound into SAMPLER",
+      "paragraphs": [
+        "Open SAMPLER and choose LOAD SAMPLE → FILES to import a WAV. Cloud files must be downloaded and available to the system file picker. MIC records a new sound; USB INPUT and CRATE are available with PRO.",
+        "For A9–A16, CRATE inside LOAD SAMPLE and the separate CRATE button both use LOAD TO SAMPLER. The source opens in SAMPLER so you can preview, trim, slice or Auto Chop before assigning it. Loading a source is separate from replacing a pad."
+      ]
+    },
+    {
+      "id": "slice",
+      "category": "SLICE & TRIM",
+      "title": "Find the cut, then assign it",
+      "paragraphs": [
+        "Open SLICE to set START and END with the orange square handles. Their touch areas extend beyond the visible squares. Drag to either edge to use the beginning or end of the source. PREVIEW auditions the selection; PAD ASSIGN starts the destination assignment.",
+        "In PAD EDIT, the orange TRIM handles define the active region and the light FADE handles soften its edges. TIME STRETCH uses a different right-edge handle and does not move the stored trim points."
+      ]
+    },
+    {
+      "id": "auto-chop",
+      "category": "AUTO CHOP",
+      "title": "Turn one source into playable chops",
+      "paragraphs": [
+        "AUTO CHOP SAMPLES uses the selected source region to prepare chops for A9–A16. AUTO CHOP DRUMS follows a drum-hit workflow for A1–A8. Preview and refine the proposed cuts before assigning them.",
+        "EMPTY ONLY keeps occupied pads; REPLACE ALL asks before replacing them. Assignment returns to the machine with the destination group selected. Each chop remains editable in PAD EDIT."
+      ]
+    },
+    {
+      "id": "time-stretch",
+      "category": "TIME STRETCH",
+      "title": "Change length. Keep the pitch.",
+      "paragraphs": [
+        "Open TIME STRETCH in PAD EDIT for any loaded A1–A16 pad, including drum chops. Turn STRETCH for manual adjustment from 50% to 200%, or drag the dark handle with two orange lines at the right end of the waveform. Move right to lengthen and left to shorten. The handle, percentage and knob use the same setting.",
+        "The standard view gives 100% approximately half the available width, leaving room to stretch to 200%. Larger FIT TO BPM results zoom out so the whole active waveform and its handle stay accessible. The visual height does not change the audio level, and the handle does not edit TRIM.",
+        "Choose THIS PAD or ALL for the current eight-pad group. ALL A1–A8 and ALL A9–A16 are separate ranges. Settings remain with the project; Undo/Redo can reverse an edit."
+      ]
+    },
+    {
+      "id": "fit-to-bpm",
+      "category": "FIT TO BPM & RESET",
+      "title": "Fit a phrase to the beat in one tap",
+      "paragraphs": [
+        "Tap ½, 1, 2, 4, 8 or 16 under FIT TO BPM to set that many beats at the current project BPM. The change applies immediately. It is calculated from the original active region, so repeated taps do not stretch an already stretched copy.",
+        "Choosing ALL after an active FIT applies that target to the current group without tapping its length again. FIT can exceed the normal knob range when supported; an unavailable target reports a message instead of silently changing the requested length.",
+        "RESET, or a double-tap on STRETCH, restores the original length. TIME STRETCH does not change the project BPM. PITCH PAD remains a separate pitch control, and existing global tempo matching remains available."
+      ]
+    },
+    {
+      "id": "sidechain",
+      "category": "SIDECHAIN",
+      "title": "Make room for the drums",
+      "paragraphs": [
+        "Open SIDECHAIN on A9–A16 or in the BASS / INSTRUMENT editor. Turn it ON, choose a SOURCE from A1–A8, then set AMOUNT and RELEASE. The selected drum's actual note start triggers the ducking, including its swung timing.",
+        "On A9–A16 choose THIS PAD or ALL A9–A16. An enabled ALL setting takes priority over the individual pad settings without erasing them. BASS and INSTRUMENT each have their own group settings. A1–A8 supply the trigger; they do not have a SIDECHAIN target page."
+      ]
+    },
+    {
+      "id": "normalize",
+      "category": "NORMALIZE",
+      "title": "NORM on. NORM off. Original preserved.",
+      "paragraphs": [
+        "In PAD EDIT, tap NORM to normalize the sample to −1 dBFS. Tap again to restore the original PCM and level. It does not turn up LEVEL or rewrite the original file in Files, CRATE or GØ GRAB.",
+        "Hold NORM to choose THIS PAD or ALL for the current A1–A8 or A9–A16 group. Choosing ALL enables normalization for the group immediately. In a mixed group, the next group operation enables the remaining eligible samples before an OFF operation restores the originals.",
+        "TURNTABLE has its own NORMALIZE button for the selected slot, with the same reversible on/off principle. Normalization settings are retained with the saved state."
+      ]
+    },
+    {
+      "id": "vintage-help",
+      "category": "VINTAGE",
+      "title": "1200, 60 or 3000 — per pad or per group",
+      "paragraphs": [
+        "On a supported PCM source, tap VINTAGE in SOUND to show 1200, 60 and 3000. Select a model directly, with no extra confirmation window. Tap VINTAGE again for bypass; the next activation remembers the last model.",
+        "Hold VINTAGE to choose THIS PAD or ALL for the current eight-pad group. A1–A8 and A9–A16 have independent group scopes. Your source is preserved and the settings are saved with the project. Availability follows the source that is actually loaded; these are vintage-inspired sampling characters, not claims of identical hardware reproduction."
+      ]
+    },
+    {
+      "id": "level-fx",
+      "category": "LEVEL, PAN & FX",
+      "title": "Shape a pad without changing the source file",
+      "paragraphs": [
+        "SOUND provides LEVEL, COMP, PAN and EQ controls. LEVEL 0 silences the pad's direct signal; existing shared reverb or delay tails can still decay. REVERSE is indicated by orange text when active. FX contains the pad's REVERB and DELAY controls.",
+        "Bank B separates SOUND, FX and SIDECHAIN in its instrument editors. Use the machine MIXER for group levels, MUTE and SOLO. Double-tap a mixer fader to return it to 0 dB; that reset is different from editing a sequencer step's velocity."
+      ]
+    },
+    {
+      "id": "auto-key",
+      "category": "AUTO KEY & PITCH",
+      "title": "Keep tuning and timing under your control",
+      "paragraphs": [
+        "AUTO KEY analyzes the sample group A9–A16 to help match the bass and instruments to your material. PITCH PAD changes the selected pad's pitch. TIME STRETCH changes its length while preserving pitch; FIT TO BPM targets a musical duration.",
+        "PITCH ALL is a performance effect for the current machine mix. Use the per-pad controls when you want to edit one sound rather than perform a change across the mix."
+      ]
+    },
+    {
+      "id": "bank-b",
+      "category": "BANK B · BASS & INSTRUMENT",
+      "title": "Build basslines and melodies with two playable voices",
+      "paragraphs": [
+        "Switch to bank B. B1–B8 play the bass voice; B9–B16 play the instrument voice. The pads in each group play notes of that shared sound. Hold a pad to open BASS or INSTRUMENT and choose its sound or preset.",
+        "Use the section arrows for SOUND, FX and SIDECHAIN. SOUND shapes the voice; FX contains REVERB and DELAY, including the delay-time choices. The selected sound and its settings belong to the group, rather than sixteen unrelated sample instruments.",
+        "The upper PLAY / STOP button controls the machine transport, just as in bank A. Play individual notes from the pads. Bank B keeps its existing monophonic behavior. OCTAVE changes the note range; AUTO KEY can match the bass and instrument tuning to the analyzed A9–A16 sample material.",
+        "TIME STRETCH is available for PCM pads A1–A16, not for the bank B synth voices. Bass and instrument settings are saved with the project."
+      ]
+    },
+    {
+      "id": "performance",
+      "category": "PERFORMANCE FX",
+      "title": "Hold a move. Combine it with the next one.",
+      "paragraphs": [
+        "Use the performance triggers and knobs for SUPER FILTER, ISOLATOR, TAPE ECHO, PITCH ALL, LOOPER and VINYL STOP. HOLD latches supported effects so you can move to another control. The RES bank has its own performance selection.",
+        "LOOPER and MUTE DRUMS can work together in either order. MUTE DRUMS affects the drum content in the looping result as well as the live drums. While holding MUTE DRUMS, another finger can adjust a knob or use another performance trigger. Each effect can be released independently.",
+        "TONE effects include VINYL GLUE, LO-FI, VINYL NOISE, CASSETTE, DRIVE, DIRT GLITCH and PITCH MOD. Use resampling to turn a live performance into new audio you can keep and reuse."
+      ]
+    },
+    {
+      "id": "midi",
+      "category": "MIDI INPUT",
+      "title": "Connect your controller by USB-C or Lightning",
+      "paragraphs": [
+        "Connect a compatible MIDI controller using a USB data connection on USB-C, or a suitable USB host adapter on Lightning. Supply external power when the controller or adapter needs it. In SETTINGS → MIDI, choose ALL MIDI INPUTS or a specific input and use REFRESH INPUTS when needed.",
+        "MIDI sends note and control messages; it does not send the controller’s audio into USB SAMPLING. Hardware such as MPD / MPK uses the notes and CC messages configured on that device. Use MIDI LEARN to match them rather than assuming a particular factory note layout.",
+        "MIDI INPUT supports the pad banks A, B and RES, plus supported controls including transport, mixer and effect controls. MIDI CLOCK remains INTERNAL: external MIDI clock sync is not offered by the current interface.",
+        "If you disconnect a device, held MIDI notes and momentary actions are released. Reconnect, check the selected input and refresh the list. An input connection does not replace or erase your project."
+      ]
+    },
+    {
+      "id": "midi-learn",
+      "category": "MIDI LEARN",
+      "title": "Touch a control. Move the matching hardware control.",
+      "paragraphs": [
+        "Open SETTINGS → MIDI → MIDI LEARN. Touch the supported pad, button or knob you want to assign, then press the hardware pad / button or move its knob. The learning overlay identifies the target and the received message. Choose DONE when finished, or CANCEL to restore the mapping from before that Learn session.",
+        "Pad mappings learn MIDI notes. Parameter mappings use supported CC messages. A mapping includes the input, MIDI channel and note / CC number. Supported continuous controls offer absolute and relative encoder modes in MIDI MAPPINGS; choose the mode that matches the controller.",
+        "Enable MIDI VELOCITY to use the controller’s playing dynamics. SAME PAD MAPPING FOR BANKS lets one set of pad assignments follow the current bank; disable it when you want bank-specific targets. PICKUP MODE helps prevent an absolute hardware knob from jumping the on-screen value when it first takes control.",
+        "Only controls exposed as Learn targets can be assigned. Learning a PERFORMANCE FX trigger is separate from learning its amount knob; use the appropriate target for each."
+      ]
+    },
+    {
+      "id": "midi-mappings",
+      "category": "MIDI MAPPINGS",
+      "title": "Keep, edit and move your controller map",
+      "paragraphs": [
+        "Open MIDI MAPPINGS to inspect assignments, change supported CC modes or momentary / toggle behavior, or CLEAR MAPPING for one target. Mapping edits are stored as app preferences and restored when the app restarts.",
+        "EXPORT MIDI MAP writes a map you can keep; IMPORT MIDI MAP reads a compatible saved map. These are controller preferences, not project audio or a proof of purchase. RESET ALL MIDI MAPPINGS asks for confirmation and does not delete music projects or samples.",
+        "When an expected control does not respond, check the selected input, the channel and note / CC number, the current bank, and whether Learn is still active. For a knob, also check PICKUP MODE and the encoder’s absolute / relative mode."
+      ]
+    },
+    {
+      "id": "turntable",
+      "category": "GØ TURNTABLE",
+      "title": "Free to scratch. PRO to go further.",
+      "paragraphs": [
+        "Open GØ TURNTABLE from the machine menu. FREE includes slots 01 and 02, your own samples, scratching, crossfader, MIXER and CUE. PRO unlocks all four slots and performance recording. Slots 03 and 04 remain visible in FREE; tapping either opens the existing PRO offer without selecting or playing it.",
+        "LOAD SAMPLE is at the top right; MIXER is in the lower control row. The slot mixer provides individual levels, SPEED and playback controls. Double-tap a slot's SPEED knob to return precisely to 100%, without resetting the other slots.",
+        "In the FREE slot MIXER, PRO replaces the SLOT 3 and SLOT 4 headings. With active PRO the normal headings return immediately. A locked slot cannot be played or edited. The main slot buttons have no extra PRO badges; REC keeps its existing PRO badge in FREE."
+      ]
+    },
+    {
+      "id": "classic-sound",
+      "category": "TURNTABLE SAMPLES",
+      "title": "Two classic sounds. Room for your own.",
+      "paragraphs": [
+        "A fresh installation starts with SCRATCH_1 in slot 01 and SCRATCH_2 in slot 02. Slots 03 and 04 start EMPTY. FREE lets you load your own sounds into slots 01 and 02; active PRO allows all four slots.",
+        "Use CLASSIC SOUND from LOAD SAMPLE or the slot's hold menu to restore the available factory sound for that slot. Your custom slot choices are kept on restart and are not replaced by an ordinary app update."
+      ]
+    },
+    {
+      "id": "turntable-recording",
+      "category": "TURNTABLE RECORDING · PRO",
+      "title": "Record the scratch, not the backing beat",
+      "paragraphs": [
+        "REC is available in TURNTABLE. With FREE it carries a PRO badge and opens the subscription screen; with active PRO it records. The recorded stereo signal includes the scratch and crossfader, before the backing beat is added. It does not use the microphone.",
+        "Tap REC for count-in, then record; STOP ends the take. Successful takes are saved automatically to CRATE as SCRATCH 001, SCRATCH 002 and so on without replacing existing recordings. The result panel offers TO PAD and EXPORT WAV. If saving fails, use the offered retry rather than assuming the take was saved."
+      ]
+    },
+    {
+      "id": "recording-modes",
+      "category": "MANUAL / SYNC",
+      "title": "Hold REC to choose the recording length",
+      "paragraphs": [
+        "Before recording, hold REC to open the bottom recording panel. Choose MANUAL for a four-beat count-in followed by recording until you press STOP. Choose SYNC and 1, 2, 4 or 8 bars for count-in and an automatic end. CLOSE returns to the normal lower controls.",
+        "If the beat is stopped, it starts with scratch recording after count-in. If it is already playing, it is not restarted. The count-in follows the audio clock. Neither the count-in nor PLAY BEAT is included in the scratch WAV."
+      ]
+    },
+    {
+      "id": "capture-help",
+      "category": "GØ GRAB · PRO",
+      "title": "Keep the last moment from another app",
+      "paragraphs": [
+        "Open GØ GRAB, deliberately start capture and follow the iOS sharing confirmation. When CAPTURE ACTIVE appears, follow SWIPE UP TO CHOOSE AUDIO SOURCE to switch to the source app. System confirmation and gesture behavior can vary with iOS.",
+        "Return to GØ-404 and use SAVE LAST to retain up to the last 30 seconds made available by iOS. CAPTURE STOPPED shows the stopped state. After saving, CAPTURE MORE starts the next capture workflow and CRATE opens your saved recordings.",
+        "The app selects a compatible capture method automatically. It saves audio, not video, and does not retain broadcast microphone audio. Some apps and protected content restrict capture. Record only material you own or have permission to use."
+      ]
+    },
+    {
+      "id": "crate",
+      "category": "CRATE · PRO",
+      "title": "One library for capture, scratches and reuse",
+      "paragraphs": [
+        "CRATE is one shared personal library for saved GØ GRAB, USB and TURNTABLE recordings. Use ALL, GØ GRAB, USB or the star filter, search by name, then select a recording to preview or trim it. A new recording is a new item; it does not replace your older captures.",
+        "From A9–A16, both CRATE inside LOAD SAMPLE and the separate CRATE button use LOAD TO SAMPLER. Preview, trim and Auto Chop the source before assigning it to pads. Opening a library item is not permission to overwrite a pad.",
+        "From TURNTABLE, LOAD TO PAD loads the selected slot from the same library. The normal slot, CUE and playback controls then apply. There is no separate copy of CRATE for TURNTABLE.",
+        "When PRO expires, your saved projects and recordings remain on the device. Premium CRATE actions require active PRO again; renew or restore a valid entitlement to regain access. Existing audio already stored in a project remains part of that project. GØ BACKUP includes the full CRATE library, including recordings not used by a selected project."
+      ]
+    },
+    {
+      "id": "usb",
+      "category": "USB SAMPLING · PRO",
+      "title": "Record external gear",
+      "paragraphs": [
+        "Connect a class-compliant USB audio input, then open LOAD SAMPLE → USB INPUT. USB SAMPLING shows the detected input name. Use REFRESH INPUT after connecting or changing equipment; REC checks the route again before recording.",
+        "Press REC to start, then STOP → CRATE to finish. The recording is committed to the existing CRATE library. Open CRATE to preview, trim and reuse it. The main Sampler and the pad LOAD route use the same USB capture system; this is separate from GØ GRAB capture from other apps.",
+        "USB-C needs a compatible data connection. A Lightning iPhone needs a USB host adapter; some equipment also needs external power or a powered hub. A spinning turntable or a lit power indicator proves power, not an audio input. The device must expose recording audio to iOS. A USB port used only for a flash drive, or an output-only device, cannot provide that input.",
+        "USB SAMPLING records only the selected USB input. It does not silently substitute the built-in microphone. USB audio and USB MIDI are separate capabilities, even if one controller or interface offers both. Active PRO access is required for USB SAMPLING."
+      ]
+    },
+    {
+      "id": "usb-troubleshooting",
+      "category": "USB INPUT TROUBLESHOOTING",
+      "title": "Connected is not always ready to record",
+      "paragraphs": [
+        "If the USB panel shows no input, check the host adapter, the data cable, device power and its audio-input capability. Try REFRESH INPUT before REC. A USB device appearing only as an output cannot be recorded by that route.",
+        "Stop a recording before changing its cable or audio route. If iOS changes the route or the connection is lost, check the panel’s status and saved recording before starting another take. Do not assume a failed or interrupted recording was saved.",
+        "To record the iPhone microphone, choose MIC deliberately. To capture supported audio from another app, use GØ GRAB. Neither is an automatic fallback for a missing USB input. Share the exact equipment model and adapter with support if the input remains unavailable."
+      ]
+    },
+    {
+      "id": "microphone",
+      "category": "MIC RECORDING",
+      "title": "Capture a new sound on the spot",
+      "paragraphs": [
+        "Choose MIC in LOAD SAMPLE and allow microphone access when iOS asks. Record and stop using the recording panel, then work with the result in the sampling workflow. The sample group and drum group share the same recording controls.",
+        "If no input is available, check microphone permission in iOS Settings and the connected audio route. Microphone recording is separate from GØ GRAB's capture of other apps and TURNTABLE's internal scratch recording."
+      ]
+    },
+    {
+      "id": "resampling",
+      "category": "RESAMPLE",
+      "title": "Make a new source from your performance",
+      "paragraphs": [
+        "The main RESAMPLE workflow turns a pattern, song or live performance into reusable sample audio. Choose the available A/B or RES source and PATTERN, SONG or LIVE, then follow the panel to capture and assign the result.",
+        "Use LIVE when you want to keep a performance made with knobs, HOLD and effect triggers. An offline export cannot reconstruct unrecorded live gestures. Resampling a performance and rendering the arrangement are different workflows.",
+        "For one processed sound, use PAD EDIT → RESAMPLE instead. This is a per-pad operation with a separate destination selection; it does not require resampling the whole beat."
+      ]
+    },
+    {
+      "id": "pad-resample",
+      "category": "PAD EDIT · RESAMPLE",
+      "title": "Print one processed pad into a new pad",
+      "paragraphs": [
+        "Open a supported loaded PCM pad and switch to RESAMPLE with the small section arrows. PREVIEW auditions the source; SELECT PAD returns to the machine so you can choose a different destination. The selection does not play or overwrite that destination immediately.",
+        "Choose a supported destination and follow the assignment controls. An occupied pad needs explicit overwrite confirmation. The original source pad stays unchanged. Use PLAY RESULT to audition a completed result, or CANCEL to leave the workflow.",
+        "PAD RESAMPLE includes the pad processing handled by this route, such as its edited region, pitch, Time Stretch, Vintage and supported pad effects. It does not bake the entire group / master performance chain into the source. Use the main RESAMPLE workflow when you want to capture the complete performance instead."
+      ]
+    },
+    {
+      "id": "projects",
+      "category": "PROJECTS",
+      "title": "Save the beat. Reopen the right session.",
+      "paragraphs": [
+        "MENU → SAVE opens the project naming workflow. Enter or edit the name and confirm with the keyboard Done / Return action to save. A newly named save is separate from choosing a project on the LOAD list.",
+        "Use LOAD for the selected saved project and LOAD LAST for the most recent autosaved session. The PROJECTS list also provides an explicit OVERWRITE action for the selected saved project. Check the selection before choosing it.",
+        "Local SAVE/LOAD does not require PRO. Save important versions explicitly rather than relying only on autosave. Undo/Redo handles supported edits within the session; loading a named project and recovering an autosave are separate actions."
+      ]
+    },
+    {
+      "id": "project-folders",
+      "category": "PROJECT FOLDERS",
+      "title": "Organize only when you want to",
+      "paragraphs": [
+        "Unfiled projects appear directly on the main PROJECTS list alongside your folders. Create a folder with the folder control, then use a project's menu or existing gestures for MOVE TO, RENAME or DELETE.",
+        "A project moved into a folder appears inside that folder instead of on the root list. Deleting the folder returns its projects to the root list; it does not delete the projects. There are no separate ALL PROJECTS or UNFILED folders to navigate through."
+      ]
+    },
+    {
+      "id": "backup",
+      "category": "GØ BACKUP · PRO",
+      "title": "Projects, CRATE and TURNTABLE in one backup",
+      "paragraphs": [
+        "Open GØ BACKUP and select the saved projects to copy to your private iCloud account. The package also includes the full CRATE library, including unused samples and scratch recordings, plus all four TURNTABLE slot assignments and their settings.",
+        "Custom slot WAVs travel with the backup. Factory CLASSIC SOUND references can be restored from the app's resources instead of duplicating those WAVs. Local SAVE remains separate from iCloud backup.",
+        "Keep the app available until upload reports completion. A failed or interrupted upload is not a confirmed backup. Review restore choices carefully when the receiving phone already has work. Backup files preserve appearance preferences, but Apple purchases are restored through StoreKit, not granted by the backup."
+      ]
+    },
+    {
+      "id": "export",
+      "category": "GO EXPORT",
+      "title": "Choose the material, then the format",
+      "paragraphs": [
+        "Open GO EXPORT from MENU. Select A/B or RES and PATTERN or SONG for the material you want to render. Use EXPORT WAV for the mix, or EXPORT STEMS with PRO. Choose the destination through the existing iOS sharing or Files interface.",
+        "Exported files can be uploaded by a destination service according to that service's settings. Keep the app available while rendering completes. A live resampling capture and an offline pattern/song render serve different workflows."
+      ]
+    },
+    {
+      "id": "stems",
+      "category": "INTELLIGENT STEMS · PRO",
+      "title": "Chops from one source, one shared stem",
+      "paragraphs": [
+        "EXPORT STEMS groups chops made from the same identified source into one WAV containing the fragments actually played in the pattern or song. Independently imported sources stay separate, including files with identical names. Older projects without reliable source identity use separate stems rather than guessing.",
+        "Bank B exports BASS and INSTRUMENTS as their respective groups. Stems share a common start and duration. Shared or nonlinear effects can prevent a sum of separate stems from being mathematically identical to the full mix; the full mix remains the mix reference."
+      ]
+    },
+    {
+      "id": "faceplates",
+      "category": "GØ FACEPLATES",
+      "title": "Change the finish. Keep the machine.",
+      "paragraphs": [
+        "Open the existing FACEPLATES gallery, choose a design and press APPLY. An unlocked design is applied immediately and the gallery returns you to the main machine without stopping the beat. The preference is kept after restart.",
+        "CLASSIC and the free designs remain available. ANALOG ROOTS PACK belongs to active PRO. GØ STREET PRESS PACK and GØ STUDIO SIGNAL PACK are separate one-time purchases, each with nine designs. OWNED indicates the verified purchase; these packs do not depend on an active PRO subscription."
+      ]
+    },
+    {
+      "id": "drum-packs",
+      "category": "GØ DRUMS",
+      "title": "Choose a kit or bring your own hits",
+      "paragraphs": [
+        "GØ DUST is free. GØ STREETS and GØ CRATES are independent, one-time purchases with 24 sounds each. GØ TAPES is included with active PRO. Preview the available sounds before choosing the material for your drum pads.",
+        "The purchase panel shows Apple's current localized price. A paid pack and a PRO subscription are separate products. Existing project-owned samples are preserved when access changes; a saved project is not proof of a permanent pack purchase."
+      ]
+    },
+    {
+      "id": "restore",
+      "category": "PRO & RESTORE PURCHASES",
+      "title": "Find your access on this iPhone",
+      "paragraphs": [
+        "GØ-404 PRO offers MONTHLY and ANNUAL plans with prices and currency supplied by Apple. PRO adds GØ GRAB, all 4 TURNTABLE slots and TURNTABLE RECORDING, USB SAMPLING, CRATE, STEMS EXPORT, GØ BACKUP, ANALOG ROOTS and GØ TAPES. TURNTABLE with 2 scratch slots, core local beatmaking, project saving and WAV export remain available without PRO.",
+        "Use RESTORE PURCHASES with the Apple Account that made the purchase. Restore verifies existing access rather than starting another purchase. Separately purchased faceplate and drum packs remain independent. A project or backup cannot grant purchase access."
+      ]
+    },
+    {
+      "id": "managing-pro",
+      "category": "SUBSCRIPTION STATUS",
+      "title": "Cancellation is different from expiration",
+      "paragraphs": [
+        "Use MANAGE SUBSCRIPTION, or iOS Settings → your name → Subscriptions, to review or cancel PRO. Turning off renewal keeps access until the verified subscription end date. When it expires, premium actions are locked and PRO badges return, including the visible REC button in TURNTABLE.",
+        "Your saved projects, audio and recordings are retained. A renewed, verified subscription unlocks PRO again. Apple handles billing and refund requests; prices shown by the App Store take precedence.",
+        "When PRO expires, slots 03 and 04 are locked but their samples, CUE points, levels and speed settings remain saved. Active playback or preview of a newly locked slot stops and TURNTABLE uses a free slot. Renewed or restored verified PRO makes the saved slots available again. GØ BACKUP preserves all four assignments; a backup does not grant PRO access."
+      ]
+    },
+    {
+      "id": "audio",
+      "category": "AUDIO TROUBLESHOOTING",
+      "title": "Get back to the sound safely",
+      "paragraphs": [
+        "Check the current output route, device volume, MASTER, mixer levels and MUTE / SOLO. Check LEVEL, PAN, the sample's active region and whether a TURNTABLE slot is empty. LEVEL 0 silences the direct pad signal; shared effect tails can still decay.",
+        "For stereo checks, use known left-only and right-only material through a verified headphone or interface route. Sound from both physical iPhone speakers is not by itself proof that the channels are reversed. Save your work before changing routes or restarting.",
+        "If a problem remains, send support your app/build version, iPhone or iPad model, iOS version, audio route and reproduction steps. Do not uninstall or reset the app as a troubleshooting step: that can remove local work. Never send Apple Account passwords or verification codes."
+      ]
+    }
+  ],
+  "navigation": [
+    [
+      "getting-started",
+      "Getting started"
+    ],
+    [
+      "step-velocity",
+      "Step velocity & gestures"
+    ],
+    [
+      "sampling",
+      "Sampling & Auto Chop"
+    ],
+    [
+      "bank-b",
+      "Bass & instruments"
+    ],
+    [
+      "time-stretch",
+      "Time Stretch & Fit to BPM"
+    ],
+    [
+      "sidechain",
+      "Sidechain"
+    ],
+    [
+      "normalize",
+      "Normalize & Vintage"
+    ],
+    [
+      "performance",
+      "Performance FX"
+    ],
+    [
+      "midi",
+      "MIDI & controllers"
+    ],
+    [
+      "turntable",
+      "Turntable & recording"
+    ],
+    [
+      "capture-help",
+      "GØ GRAB, CRATE & USB"
+    ],
+    [
+      "resampling",
+      "Resample & PAD RESAMPLE"
+    ],
+    [
+      "projects",
+      "Projects & folders"
+    ],
+    [
+      "backup",
+      "Backup & export"
+    ],
+    [
+      "restore",
+      "PRO & purchases"
+    ],
+    [
+      "audio",
+      "Audio troubleshooting"
+    ]
+  ]
+}

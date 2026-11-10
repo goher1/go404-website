@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://go404.app/sitemap.xml

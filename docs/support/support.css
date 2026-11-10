@@ -1,0 +1,47 @@
+.support-search{border-bottom:1px solid var(--line);padding:0 0 24px;margin-bottom:8px}.support-search label{display:block;color:var(--orange);font-size:10px;font-weight:700;letter-spacing:.09em;margin-bottom:10px}.support-search-row{display:flex;gap:8px}.support-search input{font:inherit;font-size:14px;min-width:0;width:100%;border:1px solid #44413b;border-radius:3px;background:#111110;color:var(--text);padding:13px 14px;min-height:48px}.support-search input::placeholder{color:#a39d92}.support-search input:focus-visible{outline:2px solid var(--orange);outline-offset:3px}.support-search button{padding:0 12px;min-height:48px;border:1px solid #44413b;border-radius:3px;background:#171715;font-size:10px;letter-spacing:.06em;font-weight:700}.support-search button:hover{border-color:var(--orange);color:var(--orange)}.support-search #support-results{font-size:12px;margin-top:10px;min-height:21px}.faq-answer p+p{margin-top:14px}.faq-list details{scroll-margin-top:24px}#support-empty{padding:24px 0;font-size:14px}.support-aside nav a{min-height:36px;display:flex;align-items:center}.support-aside{max-height:calc(100svh - 48px);overflow-y:auto;scrollbar-width:thin}.support-search:focus-within{scroll-margin-top:24px}@media(max-width:760px){.support-aside{max-height:none;overflow:visible}.support-aside nav a{min-height:44px}.support-search-row{gap:6px}.support-search input{padding:12px 10px;font-size:13px}.support-search button{padding:0 9px}.faq-list summary{min-height:64px}.faq-answer{padding-bottom:26px}.faq-answer p{overflow-wrap:anywhere}}
+
+/* Reading sizes for the support guide; marketing pages remain unchanged. */
+.faq-list summary small{font-size:11px;line-height:1.5;letter-spacing:.07em}
+.faq-list summary>span:first-child{font-size:21px;line-height:1.45}
+.faq-answer{font-size:16px;line-height:1.8}
+.support-aside nav{font-size:15px;line-height:1.6}
+.support-aside>.small-print{font-size:12px;line-height:1.8}
+.support-search label{font-size:11px}
+.support-search input{font-size:16px}
+.support-search button{font-size:12px}
+.support-search #support-results{font-size:13px}
+.support-contact>p:not(.eyebrow){font-size:16px}
+@media(max-width:760px){
+ .faq-list summary small{font-size:11px}
+ .faq-list summary>span:first-child{font-size:20px}
+ .faq-answer{font-size:16px;line-height:1.8}
+ .support-aside nav{font-size:14px}
+ .support-aside>.small-print{font-size:12px}
+ .support-search input{font-size:16px}
+}
+
+/* A reading-first guide, also on compact phones. */
+.faq-answer{font-size:18px;line-height:1.8}
+.faq-list summary small,.support-search label{font-size:12px}
+.faq-list summary>span:first-child{font-size:22px}
+.support-aside nav{font-size:16px}
+.support-search input{font-size:17px}
+.support-search #support-results{font-size:14px}
+@media(max-width:760px){.faq-answer{font-size:17px}.faq-list summary>span:first-child{font-size:20px}.support-aside nav{font-size:15px}.faq-list summary small{font-size:12px}.support-search input{font-size:17px}}
+
+.support-contact>.small-print{font-size:13px!important;line-height:1.8}
+
+/* Readability remains comfortable on small phones. */
+.support-aside>.small-print,.support-contact>.small-print{font-size:14px!important}
+@media(max-width:760px){.faq-answer{font-size:18px}.support-aside nav{font-size:16px}}
+
+/* reading-scale-20261109-v5 */
+.faq-answer{font-size:22px;line-height:1.7;padding-right:12px;color:#c1bdb5}
+.faq-list summary>span:first-child{font-size:28px;line-height:1.4}
+.faq-list summary small,.support-search label{font-size:14px;letter-spacing:.06em}
+.support-aside nav{font-size:20px;line-height:1.55;gap:12px}
+.support-aside nav a{min-height:44px}
+.support-aside>.small-print,.support-contact>.small-print{font-size:16px!important}
+.support-search input{font-size:20px;min-height:56px}.support-search button{font-size:16px;min-height:56px}
+.support-search #support-results{font-size:16px}.support-contact>p:not(.eyebrow){font-size:22px}
+@media(max-width:760px){.faq-answer{font-size:20px;line-height:1.7;padding-right:0}.faq-list summary>span:first-child{font-size:24px}.support-aside nav{font-size:18px}.support-search input{font-size:18px}.support-search-row{flex-wrap:wrap}.support-search input{flex:1 1 200px}.support-search button{flex:0 0 auto}.support-contact>p:not(.eyebrow){font-size:20px}}
