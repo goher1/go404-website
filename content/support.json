@@ -322,10 +322,10 @@
     },
     {
       "id": "export",
-      "category": "GO EXPORT",
+      "category": "GØ EXPORT",
       "title": "Choose the material, then the format",
       "paragraphs": [
-        "Open GO EXPORT from MENU. Select A/B or RES and PATTERN or SONG for the material you want to render. Use EXPORT WAV for the mix, or EXPORT STEMS with PRO. Choose the destination through the existing iOS sharing or Files interface.",
+        "Open GØ EXPORT from MENU. Select A/B or RES and PATTERN or SONG for the material you want to render. Use EXPORT WAV for the mix, or EXPORT STEMS with PRO. Choose the destination through the existing iOS sharing or Files interface.",
         "Exported files can be uploaded by a destination service according to that service's settings. Keep the app available while rendering completes. A live resampling capture and an offline pattern/song render serve different workflows."
       ]
     },

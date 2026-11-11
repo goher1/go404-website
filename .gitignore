@@ -6,3 +6,6 @@ __pycache__/
 *.zip
 local-build-status.json
 docs/_headers
+
+# Local visual QA, never served by GitHub Pages.
+review/

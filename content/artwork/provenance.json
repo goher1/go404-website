@@ -1,0 +1,147 @@
+[
+  {
+    "source": "content/artwork/bass-real-flutter.png",
+    "output": "docs/assets/web/bass-real-flutter.jpg",
+    "sourceSHA256": "bed46ee5c260876e0f96ae491a22bd12bd053c2e2911a4eb473d0e55b8ee8ddd",
+    "outputSHA256": "1b97d22b7c04fae8412b2e818f534e19a7336a9d329d4e3d96cfabc74be5c360",
+    "cropXYWH": [
+      40,
+      730,
+      1126,
+      1244
+    ],
+    "width": 1126,
+    "bytes": 175070
+  },
+  {
+    "source": "content/artwork/sampler-real-flutter.png",
+    "output": "docs/assets/web/sampler-real-flutter.jpg",
+    "sourceSHA256": "c209c8539adfd9dd4699d2b9617c2d88fa7b9a43080eb463f6ec7ac296b1ac30",
+    "outputSHA256": "a0cd9ee2c87661f3fa380e64ac3454196cd8c5973c83f79232960e4d626d1dd0",
+    "cropXYWH": [
+      40,
+      962,
+      1126,
+      700
+    ],
+    "width": 1126,
+    "bytes": 94518
+  },
+  {
+    "source": "content/artwork/crate-real-iphone.png",
+    "output": "docs/assets/web/crate-real-iphone.jpg",
+    "sourceSHA256": "1f15b3e5cbed2114887524ed44b6ff93efef0f2203166a31601bc184d9e88cee",
+    "outputSHA256": "ce6579183ae33aa5e46efcc9d8a4ac94a00dd48ba91270cca5e99931fd233041",
+    "cropXYWH": [
+      42,
+      232,
+      1124,
+      982
+    ],
+    "width": 1124,
+    "bytes": 229144
+  },
+  {
+    "source": "content/artwork/grab-30s-real-flutter.png",
+    "output": "docs/assets/web/grab-30s-real-flutter.jpg",
+    "sourceSHA256": "1680bd7f3ad97079206960d9ca5a590e7e0a152265085b31d002e106855b1719",
+    "outputSHA256": "ee0cd814d13eb6ed99eeeb34afdc208ceec188b702919ee3300f3281e5ae3775",
+    "cropXYWH": [
+      42,
+      1004,
+      1124,
+      700
+    ],
+    "width": 1124,
+    "bytes": 90717
+  },
+  {
+    "source": "docs/assets/campaign-tone-fx.png",
+    "output": "docs/assets/web/campaign-tone-fx.jpg",
+    "sourceSHA256": "dd994dfd921e05a38342e1dbf904f2c06556c00018be07a6a42ffc5505c8ebe1",
+    "outputSHA256": "18c18fde53d1da8f09d4b0f0da6fa1e11bff4bc38c6f675a3ac3eafccac804e2",
+    "cropXYWH": null,
+    "width": null,
+    "bytes": 127631
+  },
+  {
+    "source": "docs/assets/campaign-performance-fx.png",
+    "output": "docs/assets/web/campaign-performance-fx.jpg",
+    "sourceSHA256": "9195b14e8119491cf9b5e7769440fb1e49d8cebe5d2b8dcf9c60266a57f65ce3",
+    "outputSHA256": "791ea7baff181b584488d1714d80ade9da77411deb3febf609e8341a8c94b13c",
+    "cropXYWH": null,
+    "width": null,
+    "bytes": 109152
+  },
+  {
+    "source": "docs/assets/campaign-turntable.png",
+    "output": "docs/assets/web/campaign-turntable.jpg",
+    "sourceSHA256": "0649f70a24c83ae695e7340b9d84725ba070c8de0c69dda0308de0d2e6194ca1",
+    "outputSHA256": "7f3992f81e10f2909fa91bc5d5f0610c1ea991300b8f3fd147a2571b21dde8f7",
+    "cropXYWH": [
+      0,
+      184,
+      1206,
+      2340
+    ],
+    "width": null,
+    "bytes": 541679
+  },
+  {
+    "source": "review/artwork/machine-phone-mobile.svg.screen.png",
+    "output": "review/artwork/machine-phone-mobile.svg.screen.jpg",
+    "sourceSHA256": "62e434db22a6931132c207ee59486eae07bc67b26225a205cddfa9301b1169f5",
+    "outputSHA256": "5a65439b5087653a96b9d7fc9c57c9f85c07c127a7b873b803f3b4211b0205f4",
+    "cropXYWH": null,
+    "width": null,
+    "bytes": 482825
+  },
+  {
+    "source": "docs/assets/machine-phone-lit-v4.svg",
+    "output": "docs/assets/machine-phone-mobile.svg",
+    "sourceSHA256": "7d35d6be80dcd25a0e5dbd79a0adf231b4196083986fd76bb7028d935a08941f",
+    "outputSHA256": "d36321968602600d9074499a91dd5621703c2898019262522a529eb530c264a4",
+    "bytes": 1350990,
+    "geometryChanged": false,
+    "meterChanged": false,
+    "frameChanged": false
+  },
+  {
+    "source": "review/artwork/machine-ipad-web.svg.screen.png",
+    "output": "review/artwork/machine-ipad-web.svg.screen.jpg",
+    "sourceSHA256": "dcc549f6235fff7d67806ca0663f339493bf2fb2f0b5fc51e71765ff98bbbbb9",
+    "outputSHA256": "b58ca901d4fcc9781075612b5fc75e7ca0f5350d9afc7113f2f5c3fc5dca5e3e",
+    "cropXYWH": null,
+    "width": null,
+    "bytes": 598604
+  },
+  {
+    "source": "docs/assets/machine-ipad-lit-v4.svg",
+    "output": "docs/assets/machine-ipad-web.svg",
+    "sourceSHA256": "b93a2ed6e03f0d5c753b6e22f0f2ed174205d54f0a8fd9864e8c5f23bcf21450",
+    "outputSHA256": "d15174613bc54d3e341bd427ed73bcf627684a015870ad6edc1b8a873b70ebc0",
+    "bytes": 1327694,
+    "geometryChanged": false,
+    "meterChanged": false,
+    "frameChanged": false
+  },
+  {
+    "source": "review/artwork/campaign-grain-web.svg.screen.png",
+    "output": "review/artwork/campaign-grain-web.svg.screen.jpg",
+    "sourceSHA256": "2f3e840d1952a69aed866acba9a5aa157511a6bcf595e729fc3a8ac544bee64f",
+    "outputSHA256": "a17e1b7746f822eaf315eaf525de6085109aa22373f1619f8973c2b0962e025d",
+    "cropXYWH": null,
+    "width": null,
+    "bytes": 381218
+  },
+  {
+    "source": "docs/assets/campaign-ink-grain-v6.svg",
+    "output": "docs/assets/campaign-grain-web.svg",
+    "sourceSHA256": "57cc5ec780d7e64bb80e22c4bb5427e3bf58a51a78667656e4582aa6e25ae237",
+    "outputSHA256": "c684f1f68b2193cb9c98abad751e75aa9fbe1dead46ca09b8c77fdf84710fb78",
+    "bytes": 509404,
+    "geometryChanged": false,
+    "meterChanged": false,
+    "frameChanged": false
+  }
+]
