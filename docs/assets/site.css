@@ -199,7 +199,7 @@ body{font-size:20px;line-height:1.7}
 /* Approved NYC vinyl campaign: exact title orange, original sleeve texture. */
 /* The background spans the full hero, with room around both real devices. */
 .hero-product{isolation:isolate;overflow:hidden;margin-left:calc(-1 * var(--gutter));margin-right:calc(-1 * var(--gutter));padding:clamp(64px,8vw,140px) var(--gutter) clamp(50px,6vw,100px);background:#0b0b0b}
-.hero-product:before{inset:0;width:auto;height:auto;background:url('campaign-sleeve-texture.png') left center/cover;transform:scale(1.02);filter:none;opacity:1;z-index:-2}
+.hero-product:before{inset:0;width:auto;height:auto;box-sizing:border-box;background:url('campaign-ink-grain-v6.svg?v=detail3') center/cover;background-clip:padding-box;border-style:solid;border-width:14px 8px 14px clamp(20px,2.8vw,38px);border-image-source:url('campaign-sleeve-texture.png');border-image-slice:75 22 75 50;border-image-repeat:round;transform:none;filter:none;opacity:1;z-index:-2}
 .hero-product:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#00000012,transparent 12%,transparent 88%,#00000055);z-index:-1}
 .device-pair{width:min(100%,1180px);padding:0;gap:clamp(32px,5vw,72px);background:transparent;border:0;border-radius:0;perspective:2200px}
 .device-pair:before,.device-pair:after{display:none}
