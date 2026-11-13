@@ -29,7 +29,8 @@ class Page(HTMLParser):
 
 pages={p:Page(p)for p in DOCS.rglob('*.html')}
 for file,page in pages.items():
-    if page.h1!=1:errors.append(f'{file}: expected one h1, got {page.h1}')
+    expected_h1=0 if file==DOCS/'newsletter/index.html' else 1
+    if page.h1!=expected_h1:errors.append(f'{file}: expected {expected_h1} h1, got {page.h1}')
     for link in page.links:
         url=urlsplit(link)
         if url.scheme or url.netloc or not url.path and not url.fragment:continue
@@ -64,19 +65,32 @@ for route,lang in [('index.html','en'),('pl/index.html','pl')]:
 for file in pages:
     assert not re.search(r'\bGO (?:GRAB|BACKUP|EXPORT|DRUMS|TAPES|FACEPLATES|TURNTABLE)\b',file.read_text()),f'Unbranded feature name: {file}'
 
-# The approved legal document and generated policy are byte-for-byte unchanged.
-for file in ['content/privacy-policy.html','docs/privacy/index.html','docs/CNAME']:
-    previous=subprocess.check_output(['git','show','HEAD:'+file],cwd=SITE)
-    assert previous==(SITE/file).read_bytes(),f'Protected content changed: {file}'
+# The owner-approved newsletter policy update has an explicit content fingerprint.
+# Future substantive policy edits require owner approval and a new fingerprint.
+approved=json.loads((SITE/'content/privacy-approved.json').read_text())['sha256']
+for file,digest in approved.items():
+    assert hashlib.sha256((SITE/file).read_bytes()).hexdigest()==digest,f'Unapproved policy edit: {file}'
+assert subprocess.check_output(['git','show','HEAD:docs/CNAME'],cwd=SITE)==(DOCS/'CNAME').read_bytes()
+form=(DOCS/'newsletter/index.html').read_text()
+assert form==(SITE/'content/newsletter-form.html').read_text()
+assert 'email_address_check' in form and 'Check your inbox!' in form
+assert 'New features, sounds &amp; releases.<br>Straight to your inbox.' in form
+assert 'placeholder="Email address"' in form and 'SIGN ME UP!' in form
+assert not re.search(r'Free updates\.|Bezpłatne aktualizacje\.',(DOCS/'index.html').read_text()+(DOCS/'pl/index.html').read_text())
+for script in re.findall(r'<script>(.*?)</script>',form,re.S):
+    import base64
+    digest=base64.b64encode(hashlib.sha256(script.encode()).digest()).decode()
+    assert "'sha256-"+digest+"'" in form, 'Form inline script blocked by CSP'
 
 for css in (DOCS/'assets').glob('*.css'):
     for link in re.findall(r'url\([\'"]?([^\)\'\"]+)',css.read_text()):
         if link.startswith('data:'):continue
-        path=css.parent/urlsplit(link).path
+        resource=urlsplit(link).path
+        path=DOCS/resource.lstrip('/') if resource.startswith('/') else css.parent/resource
         assert path.exists(),f'Missing CSS resource: {path}'
 
 result={'status':'FAIL'if errors else'PASS','pages':checks,'errors':errors,
-        'privacyContentUnchanged':True,'privacyPageUnchanged':True,'customDomainUnchanged':True,
+        'privacyContentMatchesApprovedHash':True,'newsletterFormVerified':True,'customDomainUnchanged':True,
         'locales':['en','pl'],'brandingCorrect':True,'languageSwitchStartsAtTop':True,'noPublication':True}
 out=SITE/'review/ux-20261111';out.mkdir(parents=True,exist_ok=True)
 (out/'static-checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

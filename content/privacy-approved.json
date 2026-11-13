@@ -1,0 +1,7 @@
+{
+  "reason": "Owner authorized publishing the prepared newsletter website update, 13 November 2026. App privacy content retained; newsletter and Polish policy added. Future substantive updates need owner approval.",
+  "sha256": {
+    "content/privacy-policy.html": "14730e31adc73d3b7321287776fd82adaa332b1e309248997a3658773a20dd87",
+    "content/privacy-policy-pl.html": "978a60b342c170f80ec1e2a80320665f59429fb153d40a2316c6f0e7eb4a76e9"
+  }
+}

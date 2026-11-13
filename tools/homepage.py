@@ -133,4 +133,11 @@ def render_home(language, config):
         body+=f'<article><div class="tool-name"><h3>{name}</h3>{pro()if premium_ else""}</div><div><p>{copy}</p>{guide(anchor,"Explore the workflow","Zobacz, jak to działa (EN)")}</div></article>'
     body+=f'''</div><div class="closing-line"><p>YOUR NEXT BEAT<br><span class="orange">STARTS HERE.</span></p><a class="button button-light" href="/support/">{t('GET TO KNOW GØ-404','POZNAJ GØ-404 (EN)')} ↗</a></div></section>
 </main>'''
+    newsletter_url=config.get('newsletter_form_url')
+    if newsletter_url:
+        from urllib.parse import urlsplit
+        parsed=urlsplit(newsletter_url)
+        assert parsed.scheme=='https' and parsed.netloc=='ab7bda5a.sibforms.com' and parsed.path.startswith('/v2/serve/') and '\\' not in newsletter_url
+        newsletter=f'<section class="section newsletter-section" id="news" aria-label="GØ-404 NEWS"><iframe class="newsletter-frame" title="{t("GØ-404 NEWS sign-up form — Brevo","Formularz zapisu GØ-404 NEWS — Brevo")}" width="1100" height="220" src="/newsletter/?v=final-strip-v5-20261112" data-newsletter-frame loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="auto"></iframe><p class="newsletter-note">{t("Confirm your email to join. Leave anytime.","Potwierdź e-mail, aby dołączyć. Możesz zrezygnować w każdej chwili.")} <a href="{t("/privacy/","/pl/privacy/")}">{t("Privacy Policy","Polityka prywatności")}</a>.</p></section>'
+        body=body.replace('<div class="spec-strip"',newsletter+'\n<div class="spec-strip"',1)
     return body,title,description
