@@ -34,3 +34,7 @@
 .newsletter-note{max-width:860px;font-size:15px;line-height:1.6;text-align:center;color:var(--muted);margin:0}
 .newsletter-note a{color:var(--orange);text-underline-offset:4px;white-space:nowrap}
 @media(max-width:780px){.newsletter-section{padding-block:20px 32px}.newsletter-frame{height:250px}.newsletter-note{font-size:14px}}
+
+.bass-media{width:100%;min-width:0}
+.resample-story .tapes-detail{width:min(100%,410px);margin-inline:auto}
+.backup-detail{width:min(100%,310px);margin-top:22px}

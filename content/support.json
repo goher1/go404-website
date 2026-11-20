@@ -1,5 +1,5 @@
 {
-  "reviewed": "10 November 2026",
+  "reviewed": "20 November 2026",
   "topics": [
     {
       "id": "getting-started",
@@ -11,12 +11,23 @@
       ]
     },
     {
+      "id": "display",
+      "category": "DISPLAY",
+      "title": "Choose the iPad layout and pad feedback",
+      "paragraphs": [
+        "Open SETTINGS → DISPLAY. PAD LIGHTS controls sequencer-driven pad illumination. PAD PRESS controls the touch animation. The selection frame stays separate from both effects.",
+        "On iPad, choose iPAD FIT for the portrait layout shaped for the larger display, or CLASSIC for the phone-style proportions. The choice is saved, and the selected faceplate follows the layout."
+      ]
+    },
+    {
       "id": "sequencing",
       "category": "PATTERNS & SONG",
       "title": "Build, extend and record your groove",
       "paragraphs": [
-        "Use the 16/32 control to choose the pattern length, then 1–16 or 17–32 to edit each half. When the second half is empty, extending a 16-step pattern can copy the first half into it. Existing notes in the second half are preserved. Add SWING to change the groove.",
-        "The main REC records pad performances into the sequencer. Its count-in follows the project tempo. When the selected pattern or song contains no drum notes, a guide click continues during recording; it stays out of rendered audio. MUTE and SOLO affect the selected group."
+        "Choose a 16- or 32-step pattern with the length control. Use 1–16 and 17–32 to edit each half. Add SWING, then use GROOVE in PATTERN to move the selected pad up to 100 ms earlier or later for that pattern. Extending a 16-step pattern can copy its first half when the second half is empty.",
+        "Tap a track number to select its pad silently. Hold the number to open PAD EDIT. Drag across several track numbers to select them for SOLO and MUTE in PAD mode. Hold SOLO or MUTE to choose PAD or GROUP.",
+        "On a pad using GATE, drag the small mark on the right edge of an active step to change its note length. Select P1–P4 to work on a pattern or arrange patterns in SONG.",
+        "The main REC records pad performances into the sequencer. Its count-in follows project tempo. The guide click used when the arrangement has no drum notes stays out of rendered audio."
       ]
     },
     {
@@ -34,7 +45,9 @@
       "title": "Move between pads without leaving the editor",
       "paragraphs": [
         "Hold a loaded pad to open PAD EDIT, or use PAD EDIT in SAMPLER for the selected pad. The large outer arrows move between pads in the current bank without playing them. Navigation stops at the first and last pad.",
-        "The smaller arrows change sections. A1–A8 use SOUND → FX → TIME STRETCH → RESAMPLE. A9–A16 also include SIDECHAIN between TIME STRETCH and RESAMPLE. In SOUND and FX, X applies the edit and closes. RESAMPLE keeps its separate cancel behavior. PLAY/STOP in the editor controls the machine transport; PREVIEW auditions the edited sample."
+        "The smaller arrows change sections. Bank A offers SOUND, FLAVOR, FX, TIME STRETCH and RESAMPLE. A9–A16 also include SIDECHAIN. The large pad-change arrows sit just below the waveform.",
+        "PLAY / STOP at the top controls the machine transport. PREVIEW auditions the selected pad with its trim and fades. ONE SHOT plays the sample through; GATE plays while the pad is held.",
+        "Use CHOKE in SOUND to choose which pads are cut off when this pad plays. On A9–A16, DON’T CHOKE THIS PAD lets the selected sample keep playing when another sample triggers."
       ]
     },
     {
@@ -43,7 +56,7 @@
       "title": "Bring your own sound into SAMPLER",
       "paragraphs": [
         "Open SAMPLER and choose LOAD SAMPLE → FILES to import a WAV. Cloud files must be downloaded and available to the system file picker. MIC records a new sound; USB INPUT and CRATE are available with PRO.",
-        "For A9–A16, CRATE inside LOAD SAMPLE and the separate CRATE button both use LOAD TO SAMPLER. The source opens in SAMPLER so you can preview, trim, slice or Auto Chop before assigning it. Loading a source is separate from replacing a pad."
+        "For A9–A16, CRATE inside LOAD SAMPLE and the separate CRATE button both use LOAD TO SAMPLER. The source opens in SAMPLER so you can preview, trim, slice or use CHOP before assigning it. Loading a source is separate from replacing a pad."
       ]
     },
     {
@@ -57,11 +70,12 @@
     },
     {
       "id": "auto-chop",
-      "category": "AUTO CHOP",
+      "category": "CHOP",
       "title": "Turn one source into playable chops",
       "paragraphs": [
-        "AUTO CHOP SAMPLES uses the selected source region to prepare chops for A9–A16. AUTO CHOP DRUMS follows a drum-hit workflow for A1–A8. Preview and refine the proposed cuts before assigning them.",
-        "EMPTY ONLY keeps occupied pads; REPLACE ALL asks before replacing them. Assignment returns to the machine with the destination group selected. Each chop remains editable in PAD EDIT."
+        "Open SLICE → CHOP. AUTO DETECT looks for cut points in the selected source. Choose SAMPLE for melodic material going to A9–A16, or DRUM BREAK for drum hits going to A1–A8.",
+        "Switch to GRID for an even division, or LIVE CHOP to set cuts during playback. In AUTO DETECT and GRID, tap a waveform slice to audition it and drag the square handles to refine the cuts. LIVE CHOP has separate PLAY and SLICE controls, plus RESET CUTS.",
+        "Use ASSIGN TO PADS to confirm the mapping. EMPTY ONLY keeps occupied pads; REPLACE ALL asks before replacing them. Each assigned slice remains editable in PAD EDIT."
       ]
     },
     {
@@ -126,7 +140,7 @@
       "category": "AUTO KEY & PITCH",
       "title": "Keep tuning and timing under your control",
       "paragraphs": [
-        "AUTO KEY analyzes the sample group A9–A16 to help match the bass and instruments to your material. PITCH PAD changes the selected pad's pitch. TIME STRETCH changes its length while preserving pitch; FIT TO BPM targets a musical duration.",
+        "Auto Key analyzes the samples on A9–A16 to help match bank B to your material. When Smart Key is enabled, changing or adding a sample in this group triggers a new analysis. PITCH PAD changes the selected pad pitch; TIME STRETCH changes length while preserving pitch.",
         "PITCH ALL is a performance effect for the current machine mix. Use the per-pad controls when you want to edit one sound rather than perform a change across the mix."
       ]
     },
@@ -135,10 +149,10 @@
       "category": "BANK B · BASS & INSTRUMENT",
       "title": "Build basslines and melodies with two playable voices",
       "paragraphs": [
-        "Switch to bank B. B1–B8 play the bass voice; B9–B16 play the instrument voice. The pads in each group play notes of that shared sound. Hold a pad to open BASS or INSTRUMENT and choose its sound or preset.",
-        "Use the section arrows for SOUND, FX and SIDECHAIN. SOUND shapes the voice; FX contains REVERB and DELAY, including the delay-time choices. The selected sound and its settings belong to the group, rather than sixteen unrelated sample instruments.",
-        "The upper PLAY / STOP button controls the machine transport, just as in bank A. Play individual notes from the pads. Bank B keeps its existing monophonic behavior. OCTAVE changes the note range; AUTO KEY can match the bass and instrument tuning to the analyzed A9–A16 sample material.",
-        "TIME STRETCH is available for PCM pads A1–A16, not for the bank B synth voices. Bass and instrument settings are saved with the project."
+        "B1–B8 are the bass group and B9–B16 are the instrument group. The pads in each group play different notes of the same sound. Open PAD EDIT in bank B to edit the selected group.",
+        "In SYNTH, choose a preset and adjust the response in SOUND, FX or SIDECHAIN. Tap SAMPLED to load a recording from CRATE, a file or the microphone. Each group has its own source.",
+        "In SAMPLED, trim the waveform and set ROOT, CENTS, TONE, LEVEL and OCTAVE. Use NORMALIZE when needed. Choose ONE SHOT or GATE. In GATE, use PAD EDIT on the main machine to reopen the editor while keeping held notes playable.",
+        "OCTAVE moves the playable range. Smart Key can follow the samples on A9–A16 when Auto Key is enabled. Synth and sampled group settings are saved with the project."
       ]
     },
     {
@@ -167,7 +181,7 @@
       "category": "MIDI LEARN",
       "title": "Touch a control. Move the matching hardware control.",
       "paragraphs": [
-        "Open SETTINGS → MIDI → MIDI LEARN. Touch the supported pad, button or knob you want to assign, then press the hardware pad / button or move its knob. The learning overlay identifies the target and the received message. Choose DONE when finished, or CANCEL to restore the mapping from before that Learn session.",
+        "Open SETTINGS → MIDI LEARN. Touch the supported pad, button or knob you want to assign, then press the hardware pad / button or move its knob. The learning overlay identifies the target and the received message. Choose DONE when finished, or CANCEL to restore the mapping from before that Learn session.",
         "Pad mappings learn MIDI notes. Parameter mappings use supported CC messages. A mapping includes the input, MIDI channel and note / CC number. Supported continuous controls offer absolute and relative encoder modes in MIDI MAPPINGS; choose the mode that matches the controller.",
         "Enable MIDI VELOCITY to use the controller’s playing dynamics. SAME PAD MAPPING FOR BANKS lets one set of pad assignments follow the current bank; disable it when you want bank-specific targets. PICKUP MODE helps prevent an absolute hardware knob from jumping the on-screen value when it first takes control.",
         "Only controls exposed as Learn targets can be assigned. Learning a PERFORMANCE FX trigger is separate from learning its amount knob; use the appropriate target for each."
@@ -188,9 +202,9 @@
       "category": "GØ TURNTABLE",
       "title": "Free to scratch. PRO to go further.",
       "paragraphs": [
-        "Open GØ TURNTABLE from the machine menu. FREE includes slots 01 and 02, your own samples, scratching, crossfader, MIXER and CUE. PRO unlocks all four slots and performance recording. Slots 03 and 04 remain visible in FREE; tapping either opens the existing PRO offer without selecting or playing it.",
-        "LOAD SAMPLE is at the top right; MIXER is in the lower control row. The slot mixer provides individual levels, SPEED and playback controls. Double-tap a slot's SPEED knob to return precisely to 100%, without resetting the other slots.",
-        "In the FREE slot MIXER, PRO replaces the SLOT 3 and SLOT 4 headings. With active PRO the normal headings return immediately. A locked slot cannot be played or edited. The main slot buttons have no extra PRO badges; REC keeps its existing PRO badge in FREE."
+        "Open GØ TURNTABLE from the machine menu. FREE includes slots 01 and 02 with your own samples, scratching, crossfader and CUE. PRO unlocks all four slots and scratch recording. Slots 03 and 04 are visible in FREE so you can find the PRO option.",
+        "LOAD SAMPLE is at the top right. Adjust an individual slot’s level by dragging vertically on that slot. Enable SLOT SPEED in the bottom row to adjust a slot’s speed instead. Double-tap its speed control to return that slot to 100%.",
+        "Tap CUE IN to set the selected slot’s cue, then CUE to return to it. The four slots keep their individual samples and settings."
       ]
     },
     {
@@ -235,10 +249,10 @@
       "category": "CRATE · PRO",
       "title": "One library for capture, scratches and reuse",
       "paragraphs": [
-        "CRATE is one shared personal library for saved GØ GRAB, USB and TURNTABLE recordings. Use ALL, GØ GRAB, USB or the star filter, search by name, then select a recording to preview or trim it. A new recording is a new item; it does not replace your older captures.",
-        "From A9–A16, both CRATE inside LOAD SAMPLE and the separate CRATE button use LOAD TO SAMPLER. Preview, trim and Auto Chop the source before assigning it to pads. Opening a library item is not permission to overwrite a pad.",
-        "From TURNTABLE, LOAD TO PAD loads the selected slot from the same library. The normal slot, CUE and playback controls then apply. There is no separate copy of CRATE for TURNTABLE.",
-        "When PRO expires, your saved projects and recordings remain on the device. Premium CRATE actions require active PRO again; renew or restore a valid entitlement to regain access. Existing audio already stored in a project remains part of that project. GØ BACKUP includes the full CRATE library, including recordings not used by a selected project."
+        "CRATE is the shared library for GØ GRAB, USB, imports, scratches and instrument sounds. Search by name, make folders and star favourites. Each source filter finds matching recordings both in folders and outside them.",
+        "Select a recording for PREVIEW. TRIM opens TRIM SAMPLE, where PREVIEW plays the selected range and GØ TO CRATE saves it. Close the trim window to leave the recording untouched.",
+        "LOAD TO SAMPLER opens the selected recording for editing before assignment. Use the CRATE picker inside SAMPLED or TURNTABLE to load a sound into the active group or slot.",
+        "Your saved recordings and audio already used in projects remain on the device after PRO expires. In GØ BACKUP you can choose which CRATE items or folders to copy to iCloud."
       ]
     },
     {
@@ -276,9 +290,10 @@
       "category": "RESAMPLE",
       "title": "Make a new source from your performance",
       "paragraphs": [
-        "The main RESAMPLE workflow turns a pattern, song or live performance into reusable sample audio. Choose the available A/B or RES source and PATTERN, SONG or LIVE, then follow the panel to capture and assign the result.",
-        "Use LIVE when you want to keep a performance made with knobs, HOLD and effect triggers. An offline export cannot reconstruct unrecorded live gestures. Resampling a performance and rendering the arrangement are different workflows.",
-        "For one processed sound, use PAD EDIT → RESAMPLE instead. This is a per-pad operation with a separate destination selection; it does not require resampling the whole beat."
+        "The main RESAMPLE workflow turns a pattern, song or live performance into samples. Choose the source and PATTERN, SONG or LIVE, then follow the capture and destination controls.",
+        "A destination in bank A can use any of A1–A16. Green lamps identify free pads and yellow lamps identify occupied pads. Confirm before replacing an occupied destination.",
+        "Open the cassette icon in RES to browse TAPES. Select a take, trim it on the waveform, then choose EXPORT WAV or TO PAD. For TO PAD, choose A or RES and tap a destination. Switching banks cancels that destination selection.",
+        "Use PAD EDIT → RESAMPLE to print a single processed pad into a new pad. This route keeps the source pad and has its own destination selection."
       ]
     },
     {
@@ -287,7 +302,7 @@
       "title": "Print one processed pad into a new pad",
       "paragraphs": [
         "Open a supported loaded PCM pad and switch to RESAMPLE with the small section arrows. PREVIEW auditions the source; SELECT PAD returns to the machine so you can choose a different destination. The selection does not play or overwrite that destination immediately.",
-        "Choose a supported destination and follow the assignment controls. An occupied pad needs explicit overwrite confirmation. The original source pad stays unchanged. Use PLAY RESULT to audition a completed result, or CANCEL to leave the workflow.",
+        "Choose a supported destination. A green lamp indicates a free pad; a yellow lamp indicates an occupied pad. Confirm explicitly before replacing an occupied pad. Use PLAY RESULT to audition the result, or CANCEL to leave.",
         "PAD RESAMPLE includes the pad processing handled by this route, such as its edited region, pitch, Time Stretch, Vintage and supported pad effects. It does not bake the entire group / master performance chain into the source. Use the main RESAMPLE workflow when you want to capture the complete performance instead."
       ]
     },
@@ -315,9 +330,9 @@
       "category": "GØ BACKUP · PRO",
       "title": "Projects, CRATE and TURNTABLE in one backup",
       "paragraphs": [
-        "Open GØ BACKUP and select the saved projects to copy to your private iCloud account. The package also includes the full CRATE library, including unused samples and scratch recordings, plus all four TURNTABLE slot assignments and their settings.",
-        "Custom slot WAVs travel with the backup. Factory CLASSIC SOUND references can be restored from the app's resources instead of duplicating those WAVs. Local SAVE remains separate from iCloud backup.",
-        "Keep the app available until upload reports completion. A failed or interrupted upload is not a confirmed backup. Review restore choices carefully when the receiving phone already has work. Backup files preserve appearance preferences, but Apple purchases are restored through StoreKit, not granted by the backup."
+        "Open GØ BACKUP and choose PROJECTS or CRATE. Select the individual projects, recordings or folders you want. PROJECTS also exposes the TURNTABLE bank, including its four slot assignments.",
+        "Choose BACKUP / TO iCLOUD and press UPLOAD. Wait for completion to confirm a copy. BACKUP requires PRO. Existing cloud copies remain available in RESTORE / FROM iCLOUD; select them and press DOWNLOAD.",
+        "CRATE uses source filters such as GØ GRAB, IMPORTED and INSTRUMENT SOUNDS. Restore a separate copy if you want to keep a conflicting local version. StoreKit handles purchases separately from backup files."
       ]
     },
     {
@@ -392,12 +407,16 @@
       "Getting started"
     ],
     [
+      "display",
+      "iPad layout & pad feedback"
+    ],
+    [
       "step-velocity",
       "Step velocity & gestures"
     ],
     [
       "sampling",
-      "Sampling & Auto Chop"
+      "Sampling & CHOP"
     ],
     [
       "bank-b",
